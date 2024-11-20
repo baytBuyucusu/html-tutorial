@@ -1,0 +1,54 @@
+<!-- https://www.w3schools.com/html/html_form_attributes.asp -->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nitelik Kullanımı</title>
+</head>
+<body>
+    <h1>Form Nitelik Kullanımı</h1>
+
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        
+        <label for="ad">Adınız:</label>
+        <input type="text" name="ad" id="ad"  required placeholder="Adınızı Girin"><br><br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" name="soyad" id="soyad"><br><br>
+
+        <label for="dtarih">Doğum Tarihiniz:</label>
+        <input type="datetime-local" name="dtarih" id="dtarih"><br><br>
+
+        <label for="sifre">Şifreniz:</label>
+        <input type="password" name="sifre" id="sifre"><br><br>
+
+
+        <label for="maas">Maaşınız:</label>
+        <input type="number" name="maas" id="maas"><br><br>
+
+        <label for="eposta">E-Postanız:</label>
+        <input type="email" name="eposta" id="eposta"><br><br>
+
+        <label for="hobi">Hobiniz:</label>
+        <input type="text" name="hobi" id="hobi"><br><br>
+
+        <label for="kad">Kullanıcı Adınız:</label>
+        <input type="text" name="kad" id="kad"><br><br>
+
+        <label for="kredi-not">Kredi Notunuz:</label>
+        <input type="number" name="kredi-not" id="kredi-not"><br><br>
+
+        <label for="dosya">Özgeçmiş Dosyanız:</label>
+        <input type="file" name="dosya" id="dosya"><br><br>
+
+        <button type="submit">Bilgilerimi Kaydet</button>
+
+
+
+
+    </form>
+    
+</body>
+</html>
