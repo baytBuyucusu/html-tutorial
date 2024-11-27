@@ -9,6 +9,35 @@
     <h1>Örnek Çalışma</h1>
 
     <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+
+        <fieldset>
+            <legend>Ek Bilgi</legend>
+
+            <label for="ad">İsim:</label><br>
+            <input type="text" id="ad" name="ad" placeholder="Adınız">
+            <br><br>
+
+            <label for="sad">Soyİsim:</label><br>
+            <input type="text" id="sad" name="sad" placeholder="Soyadınız">
+            <br><br>
+
+            <label for="kiz">Kız:</label>
+            <input type="radio" id="kiz" name="cinsiyet">
+           
+
+            <label for="erk">Erkek:</label>
+            <input type="radio" id="erk" name="cinsiyet">
+            <br><br>
+
+            <label for="sehir">Yaşadığınız Şehir:</label><br>
+            <input type="text" id="sehir" name="sehir">
+            <br><br>
+
+            <label for="tarih">Doğum Tarihi:</label><br>
+            <input type="date" id="tarih" name="tarih" value="2024-01-01">
+            <br><br>
+            
+        </fieldset>
         <fieldset>
             <legend>Eğitim Bilgileri</legend>
 
@@ -31,8 +60,28 @@
         </fieldset>
         <br>
 
+        <fieldset>
+            <legend>Ek Bilgi</legend>
+
+            <label for="kosul">Koşullar</label>
+            <textarea name="kosul" id="kosul" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, tenetur? Beatae possimus necessitatibus incidunt quod, eligendi saepe odio ab architecto exercitationem, mollitia quos commodi dolores adipisci facilis assumenda similique perspiciatis?</textarea>
+            <br><br>
+
+            <input type="checkbox" id="kabul" name="kabul">
+            <label for="kabul">Koşulları Kabul ediyorum</label>
+            <br>
+
+            <input type="checkbox" id="cerez" name="cerez">
+            <label for="cerez">Çerezleri Kabul ediyorum</label>
+            
+            
+        </fieldset>
+        <br>
+
         <button type="submit">Kaydet</button>
         <button type="reset">Temizle</button>
+
+       
 
     </form>
     
