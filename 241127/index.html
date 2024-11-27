@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornek Çalışma</title>
+</head>
+<body>
+    <h1>Örnek Çalışma</h1>
+
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+        <fieldset>
+            <legend>Eğitim Bilgileri</legend>
+
+            <label for="okul">Okul:</label><br>
+            <input type="text" id="okul" name="okul">
+            <br><br>
+
+            <label for="sinif">Sınıf:</label><br>
+            <input type="text" id="sinif" name="sinif">
+            <br><br>
+
+            <label for="bolum">Bölümünüz:</label><br>
+            <select name="bolum" id="bolum">
+                <option value="bilisim">Bilişim Teknolojileri</option>
+                <option value="grafik">Grafik Tasarım</option>
+                <option value="cocuk">Çocuk Gelişim</option>
+                <option value="moda">Moda Tasarım</option>
+            </select>
+
+        </fieldset>
+        <br>
+
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+
+    </form>
+    
+</body>
+</html>
