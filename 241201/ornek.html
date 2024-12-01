@@ -1,0 +1,72 @@
+<!--Sümeyra Hocanın Ödev Videosu-->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornek Çalışma</title>
+</head>
+<body>
+    <h1>Kayıt Formu</h1>
+
+    <!--Kişisel Bilgiler-->
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+
+            <label for="ad">Ad Soyad:</label><br>
+            <input type="text" id="ad" name="ad" placeholder="Adınız" required>
+            <br><br>
+                        
+            <label for="tarih">Doğum Tarihi:</label><br>
+            <input type="date" id="tarih" name="tarih" value="2000-01-01">
+            <br><br>
+       
+            <label for="maas">Maaş Beklentiniz</label><br>
+            <input type="number" id="maas" name="maas" min="20000" max="60000" step="1000">
+            <br><br>
+
+            <label for="ders">En Sevdiğiniz Ders</label><br>
+            <input type="text" name="ders" id="ders" list="dersler">
+            <datalist id="dersler">
+                <option value="Web Tabnlı uyg. Geliştirme"></option>
+                <option value="Yapay Zeka"></option>
+                <option value="Mobil Tabnlı uyg. Geliştirme"></option>
+                <option value="Grafik uyg. Geliştirme"></option>
+            </datalist>          
+           
+        </fieldset>
+
+        <br>
+            <!--Üyelik Bilgileri-->
+        <fieldset>
+            <legend>Üyelik Bilgileri</legend>
+
+            <label for="kad">Kullanıcı Adınız:</label><br>
+            <input type="text" id="kad" name="kad" required pattern="[A-Za-z]{5}" title="Kullanıcı adı yanlızca harflerden oluşmalı ve en fazla 5 karakter olmalı">
+            <br><br>
+
+            <label for="posta">E-Posta:</label><br>
+            <input type="email" id="posta" name="posta" placeholder="Örn@yazilim11.com">
+            <br><br>
+
+            <label for="sifre">Şifre:</label><br>
+            <input type="password" id="sifre" name="sifre" minlength="8">
+            <br><br>
+
+            <label for="uyelik">Üyelik Sözleşmesi:</label><br>
+            <textarea name="uyelik" id="uyelik" rows="5" cols="50" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint error beatae itaque quam natus soluta quo doloribus, cumque dolorum eveniet, reprehenderit eos mollitia! Est nam tempora eveniet saepe aspernatur.</textarea>
+            <br>
+            
+        </fieldset>
+        <br>
+
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>
+    </form>
+
+
+    
+</body>
+</html>
