@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutu Modeli</title>
+    <!-- Bu bölümde kutu modeline değileceğiz. 
+        Bir HTML belgesinde her nesne bir kutudur. 
+    -->
+        <!--
+            1- Bir kutu da  genişlik + iç boşluk + kenarlık + dış boşluklardan oluşur. 
+        -->
+    <style>
+
+        /* Öğeyi denetle ile div etiketini inceleyelim. */
+        div{
+            background-color: pink;/*arka plan rengi*/
+            width: 250px;/*genişlik*/
+            height: 200px;
+            padding: 30px;
+            border: dashed rgb(243, 177, 177) 10px;
+            margin: 0px;
+            text-align: center;/*sağdan soldan metni ortalar*/
+            line-height: 200px;/*üstten alttan metni ortalamak için*/
+
+        }
+        .kutu{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+     
+   
+
+    </style>
+
+</head>
+<body>
+    <div>
+        Bu bir kutudur
+    </div>
+    <div class="kutu">
+        bu bir kutudur
+        
+    </div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Özelliği</title>
+
+    <!-- Bu örnekte display özelliğinin bazı değerlerini göreceksiniz.-->
+    <!-- display:block, display:inline, display:inline-block -->
+    <!-- displayin çok fazla değeri var. bu içerikte saddece yukarıdakilere değineceğiz-->
+
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+
+       h1{
+        /*visibility: hidden; */
+       
+        background-color: #2d3436;
+        color:#fff;
+        padding:10px;
+        margin:0 0 1px 0;
+       }
+
+       a{
+       display: inline-block;
+        width: 250px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color:#0984e3;
+        color:#fdcb6e;
+       }
+
+       #galeri{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin:16px auto;
+        width: 916px;
+       }
+
+       input[type="checkbox"]{
+        display: none;
+       }
+
+       input[type="checkbox"]+label{
+        font-size: 1.5em;
+        display: inline-block;
+        padding:5px 10px;
+        background-color: #b2bec3;
+        color:#dfe6e9;
+       }
+
+       input[type="checkbox"]:checked+label{
+        background-color: #00b894;
+        color:#fff;
+        border-radius: 3px;
+       }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- HTMLde bazı öğeler ekranda blok olarak bazılarıda bulundukları satır içindeki (inline) yer kadar alan kaplarlar -->
+     <!-- 
+        örneğin h1, div, p  gibi etiketler blok elementlerdir.
+        a, img, span, i, u, etiketlerde satıriçi(inline) elementlerdir.
+     -->
+        <div>
+            <h1>Merhaba Dünya</h1>
+            <h1>Merhaba Dünya</h1>
+            <h1>Merhaba Dünya</h1>
+            <h1>Merhaba Dünya</h1>
+        </div>
+      
+        <div>
+            <p>Merhaba Dünya</p>
+            <p>Merhaba Dünya</p>
+            <p>Merhaba Dünya</p>
+            <p>Merhaba Dünya</p>
+        </div>
+
+        <div>
+            <a href="#">Merhaba Dünya</a>
+            <a href="#">Merhaba Dünya</a>
+            <a href="#">Merhaba Dünya</a>
+            <a href="#">Merhaba Dünya</a>
+        </div>
+
+        <div id="galeri">
+            <img src="https://fakeimg.pl/300x200/f01818/ffffff?text=RESIM" alt="...">
+            <img src="https://fakeimg.pl/300x200/f01818/ffffff?text=RESIM" alt="...">
+            <img src="https://fakeimg.pl/300x200/f01818/ffffff?text=RESIM" alt="...">
+            <img src="https://fakeimg.pl/300x200/f01818/ffffff?text=RESIM" alt="...">
+            <img src="https://fakeimg.pl/300x200/f01818/ffffff?text=RESIM" alt="...">
+            <img src="https://fakeimg.pl/300x200/f01818/ffffff?text=RESIM" alt="...">
+            <img src="https://fakeimg.pl/300x200/f01818/ffffff?text=RESIM" alt="...">
+        </div>
+        <div>
+
+            <input type="checkbox" name="secim[]" id="secim1">
+            <label for="secim1">Kitap Okuma</label>
+
+            <input type="checkbox" name="secim[]" id="secim2">
+            <label for="secim2">Yüzme</label>
+
+            <input type="checkbox" name="secim[]" id="secim3">
+            <label for="secim3">Futbol Oynamak</label>
+
+            <input type="checkbox" name="secim[]" id="secim4">
+            <label for="secim4">Gezme</label>
+
+        </div>
+
+
+
+    
+</body>
+</html>
