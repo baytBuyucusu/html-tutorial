@@ -1,0 +1,84 @@
+/*Genel biçimlendirme*/
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /*Genişlik yükseklik border e göre aynı kalsın dahil*/
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", serif;
+  font-weight: 400; /*Kalınlığı ayarlar*/
+}
+
+.ayrac {
+  margin: 10px auto;
+  border-bottom: 1px #fff solid;
+}
+
+/*Header bölümü*/
+header {
+  background-color: #005670;
+  color: #8db9ca;
+  padding: 30px;
+  text-align: center; /*Yazıyı bulunduğu nesne içerisinde ortalar.*/
+}
+
+header ul {
+  justify-content: center; /*içeriği hizalama 2.  si "align-items: ;" */
+
+  display: flex; /*İçindeki nesneler esnek olsun*/
+  list-style: none; /*ul lede kullanılan sitili kapatır*/
+}
+
+/*main Bölümü*/
+#menu a {
+  color: #fff;
+  text-decoration: none; /*Bağlantı nın altındaki çizgiyi kapatır*/
+  padding: 16px 8px 0px 8px;
+  display: block;
+}
+
+main {
+  display: flex;
+  margin: 20px; /*Dış Boşluk verir*/
+  gap: 16px; /*içindeki itemlere bpşluk veriri*/
+  padding: 16px; /*İç boşluk*/
+  border: 1px solid #333; /*Çerçeve veya kenarlık olarak geçer*/
+  border-radius: 8px; /*Keskin kenar geçişinin yumuşaması (kenarı oval yapma)*/
+}
+
+main .content {
+  flex: 9;
+  background-color: #8db9ca;
+  padding: 16px;
+}
+
+main aside {
+  flex: 3; /*3 boyut kadar esniyecek*/
+  background-color: #8db9ca;
+  padding: 16px;
+}
+
+main section h2 {
+  margin-bottom: 10px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside a {
+  color: #223;
+  line-height: 150%;
+}
+
+/*Footer bölümü*/
+footer {
+  background-color: #005670;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center; /*Yazıyı bulunduğu nesne içerisinde ortalar.*/
+}
