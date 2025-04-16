@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pelit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="b.css">
+    <link rel="shortcut icon" href="img/pelit-logo-2-min.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+
+    <header class="position-sticky top-0 z-3">
+        <!-- header bölümü en üst kısım -->
+        <div id="header-ust" class="bg-primary">
+            <div class="container">
+                <div class="row d-flex justify-content-between ">
+                    <div class="col-md-4 d-flex">
+                        <!-- tr en kısmı -->
+                        <ul class="nav border-end" id="dil-menu">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">TR</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">EN</a>
+                            </li>
+                          </ul>
+                          <!-- ikon -->
+                          <ul class="nav" id="ikon-menu">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><i class="bi bi-twitter-x"></i></a>
+                            </li>
+                          </ul>
+                        <!-- tr en kısmı -->
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <nav class="navbar">
+                            <div class="container-fluid">
+                              <form class="d-flex" role="search" action="kaydet.php">
+                                <input class="form-control me-2 rounded-0 border-0 bg-info" type="search" placeholder="Ara..." aria-label="Search">
+                                <button class="btn bg-info" type="submit"><i class="bi bi-search-heart-fill"></i></button>
+                              </form>
+                            </div>
+                          </nav>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header bölümü en üst kısım -->
+        
+        <!-- header ikinci satır -->
+        <div id="header-orta" class="bg-danger">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-md-12 d-flex justify-content-center p-3">
+                        <a href="index.html"><img src="img/pelit-logo-2-min.png" alt="pelit logo" style="width: 100px;"></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- header ikinci satır bitisi-->
+
+        <!-- header ucuncu satır -->
+        <div id="header-alt" class="bg-success">
+            <div class="container">
+                <div class="row justify-content-between">
+                  <div class="col-md-4">
+                    <!-- ilk menü kısmı -->
+                    <nav class="navbar navbar-expand-lg ">
+                      <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ürünler
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="urunler.html">Yeni Ürünler</a></li>
+                                    <li><a class="dropdown-item" href="urunler.html">Ürünler</a></li>
+                                    <li><a class="dropdown-item" href="#"></a></li>
+                                  </ul>
+                                </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Yeni Ürünler</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white" href="#">Çikolata mause</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  <!-- ilk menü kısmı bitişi-->
+                  </div>
+                  <div class="col-md-4  d-flex">
+                    <!-- iki menü kısmı -->
+                    <ul class="nav  justify-content-end" id="oneri-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Öneri Görüş</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#">Şubeler</a>
+                      </li>
+                    </ul>
+                  <!-- iki menü kısmı -->
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- header ucuncu satır -->
+    </header>
+
+    <main>
+        <div class="container">
+             <!-- sayfa içini gösteren link kısmı -->
+            <div class="row">
+                <div class="col-12">
+                  <h3 class="p-3 text-center border-bottom border-3 border-secondary">Öneri ve Görüş</h3>
+                  <nav aria-label="breadcrumb ">
+                    <ol class="breadcrumb p-3 border-bottom border-3 border-secondary">
+                      <li class="breadcrumb-item text-reset"><a href="index.html">Ana Sayfa</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Öneri Görüş</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              <!-- sayfa içini gösteren link kısmı Bitişi -->
+
+              <div class="row">
+                <div class="col-md-12 text-center">
+                    <h5>Öneri Ve Görüşleriniz</h5>
+                    <p>Düşüncelerinizi Bize ulaştırmak için lütfen formu doldurunuz. <br> <strong>Lütfen "*"</strong> ile işaretli alanların hepsini doldurun.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">İsim *</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="İsminizi Giriniz...">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Telefon *</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Telefon Giriniz...">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Şehir *</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Şehir Giriniz...">
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Soyisim *</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Soyisminizi Giriniz...">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">E-posta *</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="E-posta Giriniz...">
+                      </div>
+                      <label for="formGroupExampleInput2" class="form-label">Şube *</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option value="1">İstanbul</option>
+                        <option value="2">Bursa</option>
+                        <option value="3">Gaziantem</option>
+                      </select>
+                </div>
+
+                <div class="col-md-12">
+                    <label for="oner" class="form-label">Bize hangi konuda ulaşmak istiyorsunuz? *</label>
+                    <select class="form-select" id="oner" aria-label="Default select example">
+                        <option selected>Öneri</option>
+                        <option value="1">Şikayet</option>
+                        <option value="2">Görüş</option>
+                      </select>
+                </div>
+
+              </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <!-- footer kısmı -->
+        <div id="pelit-logo" class="row">
+          <div class="col-md-12 text-center">
+            <img src="img/logo-bottom-min.png" alt="pelit logo bottom">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ayrac">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- menü kısmı -->
+            <ul class="nav  justify-content-center" id="oneri-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ana Sayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Şubeler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">İletişim</a>
+              </li>
+            </ul>
+          <!-- menü kısmı -->
+          </div>
+        <!-- footer kısmı -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
